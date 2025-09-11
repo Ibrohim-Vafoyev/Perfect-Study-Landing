@@ -1,0 +1,163 @@
+
+body {
+  background:  #fff0f8;;
+
+}
+.navbar {
+  background: #f8c8dc;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.img1{
+ width: 50%;
+}
+
+
+.navbar-brand {
+  font-size: 26px; 
+  font-weight: bold;
+  color: #d11c8e !important; 
+}
+
+.navbar1 {
+  font-size: 26px; 
+  font-weight: bold;
+  color: #d11c8e !important; 
+ display: flex;
+ align-items: center; 
+ justify-content: center;
+}
+
+
+.nav-link {
+  color: #d11c8e ;
+  font-weight: 500;
+  margin: 0 8px;
+  position: relative;
+  transition: all 0.3s ease;
+  
+}
+
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background-color: #d11c8e; 
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #a01369 ;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+
+.btn-pink {
+  background: #d11c8e; 
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 8px 22px;
+  font-weight: 600;
+}
+
+.btn-pink:hover {
+  border: 1px solid rgba(209, 28, 142, 0.5);
+  background-color: white;
+  color: #d11c8e ;
+  font-weight: 600;
+}
+
+
+.navbar-toggler {
+  border: 2px solid #d11c8e;
+  padding: 12px 9px;
+
+}
+
+.navbar-toggler-icon {
+  width: 24px;
+  height: 2px;
+  background-color: #d11c8e; 
+  display: block;
+  position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  width: 24px;
+  height: 2px;
+  background-color: #d11c8e; 
+  position: absolute;
+  left: 0;
+}
+
+.navbar-toggler-icon::before {
+  top: -7px;
+}
+
+.navbar-toggler-icon::after {
+  top: 7px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none;
+  box-shadow: 0 0 6px rgba(209, 28, 142, 0.6);
+}
+.btn-close {
+  filter: invert(31%) sepia(99%) saturate(5487%) hue-rotate(314deg) brightness(90%) contrast(92%);
+  opacity: 1 !important;
+  transition: box-shadow 0.2s ease;
+}
+
+.btn-close:active {
+  box-shadow: 0 0 10px #d11c8e; 
+  }
+
+  
+  
+.navbar1 {
+ color: #d11c8e;
+      text-align: center;
+  margin: 50px 0;
+  font-weight: bold;
+}
+h2 {
+color: #d11c8e;
+margin-top: 30px;
+text-align: center;
+}
+.img1 {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.card {
+  border: none;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  background-color: #fff;
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+p {
+  text-align: center;
+  line-height: 1.6;
+}
+
+
