@@ -1,133 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perfect study</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Background Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./index.css">
-  <link rel="stylesheet" href="./index.js">
+        body,
+        html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
 
+        /* Video fon */
+        .video-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* videoni to‘liq ekranga moslashtirish */
+            z-index: -1;
+            /* kontent ustida turmasligi uchun */
+        }
+
+        /* Home section */
+        .home {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.4);
+            /* videoni biroz qoraytirish uchun */
+        }
+
+        .home h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
-  
-  <nav class="navbar navbar-expand-lg">
-  <div class="container">
 
-    <a class="navbar-brand" href="#">
-      <img style="width: 50px;" src="./img/logo_clean.png" alt="">
-      Perfect Study
-    </a>
+    <!-- Video fon -->
+    <video autoplay muted loop class="video-bg">
+        <source src="video.mp4" type="video/mp4">
+        Sizning brauzeringiz videoni qo‘llab-quvvatlamaydi.
+    </video>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <ul class="navbar-nav  d-none d-lg-flex">
-      <li class="nav-item"><a class="nav-link" href="#">Asosiy</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Kurslar</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Xizmatlar</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Biz haqimizda</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Bog'laning</a></li>
-    </ul>
-
-    <a href="signup.html" class="btn btn-pink ms-lg-3 mt-3 mt-lg-0 shadow d-none d-lg-inline-block">Ro'yxatdan o'ting</a>
-  </div>
-</nav>
-
-<div class="offcanvas offcanvas-end offcanvas-sm " id="demo">
-  <div class="offcanvas-header">
-    <div class="offcanvas-title">
-      <a class="navbar-brand" href="#">
-        <img style="width: 50px;" src="./img/logo_clean.png" alt="">
-        Perfect Study
-      </a>
-    </div>
-    <button class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
-  </div>
-
-  <div class="offcanvas-body">
-    <ul class="navbar-nav">
-      <li class="nav-item"><a class="nav-link" href="#">Asosiy</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Kurslar</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Xizmatlar</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Biz haqimizda</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Bog'laning</a></li>
-    </ul>
-    <a href="signup.html" class="btn btn-pink mt-3">Ro'yxatdan o'ting</a>
-  </div>
-</div>
-
-  <style>
-
-  </style>
-</head>
-<body>
-
-<div class="container">
-
-  <h1 class="navbar1">Nega Perfect Study o'quv markazini tanlashingiz kerak</h1>
-
-  <div class="row justify-content-center">
-    <div class="col-md-8">
-      <div class="card text-center">
-        <h2>1. Sifatli ta’lim</h2>
-        <img class="img1" src="./images/1pexels-max-fischer-5212345.jpg" alt="Interaktiv dars">
-        <p>Perfect Study o‘quv markazida darslar malakali ustozlar tomonidan olib boriladi.</p>
-        <p>Darslar interaktiv va zamonaviy usullar bilan tashkil qilinadi.</p>
-        <p>O‘quvchilar nazariy bilim bilan bir qatorda amaliy mashg‘ulotlar ham oladi.</p>
-        <p>Shu tarzda bilimlarni mustahkamlash va o‘rganish yanada samarali bo‘ladi.</p>
-      </div>
-
-      <div class="card text-center">
-        <h2>2. Shaxsiy yondashuv va e’tibor</h2>
-        <img class="img1" src="./images/2ulia-m-cameron-4145347.jpg" alt="Shaxsiy yondashuv">
-        <p>Har bir o‘quvchiga alohida e’tibor beriladi.</p>
-        <p>Ustozlar sizning qobiliyatingiz va o‘rganish tezligingizni hisobga oladi.</p>
-        <p>Darslar davomida individual maslahatlar beriladi.</p>
-        <p>Bu sizning bilimlarni yaxshiroq o‘zlashtirishingizga yordam beradi.</p>
-      </div>
-
-      <div class="card text-center">
-        <h2>3. Amaliyotga yo‘naltirilgan ta’lim</h2>
-        <img class="img1" src="./images/3yankrukov-8617812.jpg" alt="Amaliy mashg‘ulot">
-        <p>Darslar real hayotdagi vaziyatlarga asoslanadi.</p>
-        <p>O‘quvchilar nazariy bilimni amalda qo‘llashni o‘rganadi.</p>
-        <p>Amaliy mashg‘ulotlar juda muhim hisoblanadi.</p>
-        <p>Shu bilan bilimlar uzoq muddatli esda qoladi va o‘rganish samaradorligi oshadi.</p>
-      </div>
-
-      <div class="card text-center">
-        <h2>4. Qulay dars vaqtlari</h2>
-        <img class="img1" src="./images/4pexels-pavel-danilyuk-8423385.jpg" alt="Qulay dars vaqtlari">
-        <p>Darslar sizning shaxsiy jadvalingizga moslashadi.</p>
-        <p>Siz boshqa faoliyatlaringiz bilan o‘qishni uyg‘unlashtira olasiz.</p>
-        <p>Ertalab, tush yoki kechqurun dars olish imkoniyati mavjud.</p>
-        <p>Bu o‘qish jarayonini qulay va stresssiz qiladi.</p>
-      </div>
-
-      <div class="card text-center">
-        <h2>5. Natijalarga erishish</h2>
-        <img class="img1" src="./images/5image.png" alt="Natijalarga erishish">
-        <p>O‘quvchilarimiz imtihonlarda yaxshi natijalar ko‘rsatadi.</p>
-        <p>Ustozlar har bir o‘quvchiga diqqat bilan yondashadi.</p>
-        <p>Darslar va maslahatlar sizning bilimlarni samarali o‘zlashtirishga yordam beradi.</p>
-        <p>Shu yondashuv bilan o‘rganish jarayoni tezroq va osonroq bo‘ladi.</p>
-      </div>
-
-    </div>
-  </div>
-
-</div>
-
-
+    <!-- Home qismi -->
+    <section class="home">
+        <div>
+            <h1>Bizning Saytimizga Xush Kelibsiz</h1>
+            <p>Siz izlayotgan hamma narsa shu yerda</p>
+        </div>
+    </section>
 
 </body>
 

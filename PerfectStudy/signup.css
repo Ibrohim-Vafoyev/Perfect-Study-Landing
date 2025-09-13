@@ -1,0 +1,37 @@
+body {
+    background-color: #f8c8dc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-container h2 {
+    color: #d11c8e;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.btn-pink {
+    background: #d11c8e;
+    color: #fff;
+    border: none;
+    width: 100%;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.btn-pink:hover {
+    background: #a01369;
+}
