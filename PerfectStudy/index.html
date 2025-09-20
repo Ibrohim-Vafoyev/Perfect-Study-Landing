@@ -17,9 +17,9 @@
 </head>
 
 <body>
-
+ 
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg shadow border-2 fixed-top">
         <div class="container">
 
             <a class="navbar-brand" href="#">
@@ -68,7 +68,193 @@
         </div>
     </div>
 
-    <!-- Qulayliklar -->
+    <!-- Home -->
+    <section class="py-5">
+
+        <style>
+            .video-container {
+                position: relative;
+                width: 100%;
+                height: 100vh;
+                overflow: hidden;
+            }
+
+            .video-container video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+
+
+
+
+            .overlay-text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                color: #fff;
+                z-index: 2;
+                text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+                padding: 0 1rem;
+            }
+
+
+            .overlay-text h1 {
+                font-size: clamp(1.5rem, 4vw, 2.5rem);
+                font-weight: 700;
+            }
+
+
+            .overlay-text p {
+                font-size: clamp(1rem, 2vw, 1.25rem);
+                margin-top: 0.5rem;
+            }
+
+
+            @media (max-width: 768px) {
+                .video-container {
+                    height: 60vh;
+                }
+
+                .overlay-text h1 {
+                    font-size: 1.5rem;
+                }
+
+                .overlay-text p {
+                    font-size: 1rem;
+                }
+            }
+        </style>
+
+        <div class="video-container">
+            <video autoplay muted loop playsinline preload="auto">
+                <source src="../img/Education_Videos_Education_Free_Stock_Videos_Education_Free_Stock.mp4" type="">
+            </video>
+
+
+            <div class="overlay-text">
+                <h1>Bilim kuchdir,</h1>
+                <p>Perfect stuady esa uning kalitidir</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- O'qituvchilar -->
+
+    <div class="container py-5">
+        <h2 class="text-center mb-5">Bizning Jamoa</h2>
+        <div class="row">
+
+            <div class="col-md-3">
+                <div class="team-member p-2 shadow d-flex align-items-center" data-name="Sardor Xuramov"
+                    data-role="Perfect Study o‘quv markazi asoschisi."
+                    data-info="Xalqaro Vestminster universitetida &quot;Biznesda axborot tizimlari&quot; yo‘nalishida bakalavr darajasida diplomga ega. EPAM Systems kompaniyasida 4+ yil dasturchi muhandis. Microsoft low-code/no-code sertifikatiga ega."
+                    data-img="https://via.placeholder.com/300">
+                    <img src="./photo_2025-08-14_20-25-45.jpg" class="rounded-pill me-2 w-25 h-25">
+                    <div class="">
+                        <strong>Sardor Xuramov</strong><br>
+                        <small>Bizning Xo'jayin</small>
+                    </div>
+                </div>
+                <div class="team-member p-2 mt-2 shadow d-flex align-items-center" data-name="Ibrohim Vafoev"
+                    data-role="Dasturiy Ta’minot & Kompyuter Muhandisi."
+                    data-info="Dasturiy ta’minot bo‘yicha tajribali muhandis."
+                    data-img="https://via.placeholder.com/300">
+                    <img src="./photo_2025-08-14_20-25-45.jpg" class="rounded-circle me-2  w-25 h-25">
+                    <div>
+                        <strong>Ibrohim Vafoev</strong><br>
+                        <small>Dasturiy Ta’minot & Kompyuter Muhandisi</small>
+                    </div>
+                </div>
+                <div class="team-member p-2 mt-2 shadow d-flex align-items-center" data-name="Nuraliev Muhammadali"
+                    data-role="Dasturiy ta'minot" data-info="Dasturiy ta’minot mutaxassisi."
+                    data-img="https://via.placeholder.com/300">
+                    <img src="./photo_2025-08-14_20-25-45.jpg" class="rounded-circle me-2 w-25 h-25">
+                    <div>
+                        <strong>Tilloyev Azizbek</strong><br>
+                        <small>Matematika O'qituvchisi</small>
+                    </div>
+                </div>
+                <div class="team-member p-2 mt-2 shadow d-flex align-items-center" data-name="Namozov Ibrohim"
+                    data-role="Frontend Muhandisi." data-info="Frontend dasturchi."
+                    data-img="https://via.placeholder.com/300">
+                    <img src="./photo_2025-08-14_20-25-45.jpg" class="rounded-circle me-2 w-25 h-25">
+                    <div>
+                        <strong>Dovurova Bahora</strong><br>
+                        <small>Matematika O'qituvchisi</small>
+                    </div>
+                </div>
+                <div class="team-member p-2 mt-2 shadow d-flex align-items-center" data-name="Namozov Ibrohim"
+                    data-role="Frontend Muhandisi." data-info="Frontend dasturchi."
+                    data-img="https://via.placeholder.com/300">
+                    <img src="./photo_2025-08-14_20-25-45.jpg" class="rounded-circle me-2 w-25 h-25">
+                    <div>
+                        <strong>Fayziyeva Mohinur</strong><br>
+                        <small>Arab Tili O'qituvchisi</small>
+                    </div>
+                </div>
+                <div class="team-member p-2 mt-2 shadow d-flex align-items-center" data-name="Namozov Ibrohim"
+                    data-role="Frontend Muhandisi." data-info="Frontend dasturchi."
+                    data-img="https://via.placeholder.com/300">
+                    <img src="./photo_2025-08-14_20-25-45.jpg" class="rounded-circle me-2 w-25 h-25">
+                    <div>
+                        <strong>Holov Feruz</strong><br>
+                        <small>Rus Tili O'qituvchisi</small>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 text-center">
+                <img id="member-img" src="./images/ibrohim.jpg" class="img-fluid rounded shadow">
+            </div>
+
+
+            <div class="col-md-5">
+                <h4 id="member-name">Sardor Xuramov</h4>
+                <p id="member-role">Perfect Study o‘quv markazi asoschisi.</p>
+                <p id="member-info">Xalqaro Vestminster universitetida “Biznesda axborot tizimlari” yo‘nalishida
+                    bakalavr darajasida diplomga ega. EPAM Systems kompaniyasida 4+ yil dasturchi muhandis. Microsoft
+                    “low-code/no-code” sertifikatiga ega.</p>
+
+                <div class="d-flex gap-3 mt-4">
+                    <div class="stats-box">
+                        <span>5+</span>
+                        yillik tajriba
+                    </div>
+                    <div class="stats-box">
+                        <span>10+</span>
+                        Xalqaro loyihalar
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const members = document.querySelectorAll('.team-member');
+        const memberImg = document.getElementById('member-img');
+        const memberName = document.getElementById('member-name');
+        const memberRole = document.getElementById('member-role');
+        const memberInfo = document.getElementById('member-info');
+
+        members.forEach(member => {
+            member.addEventListener('click', function () {
+                document.querySelector('.team-member.active')?.classList.remove('active');
+                this.classList.add('active');
+
+                memberImg.src = this.dataset.img;
+                memberName.textContent = this.dataset.name;
+                memberRole.textContent = this.dataset.role;
+                memberInfo.textContent = this.dataset.info;
+            });
+        });
+    </script>
+
+    <!--Qulayliklar -->
     <div class="container">
 
         <h1 class="navbar1">Nega Perfect Study o'quv markazini tanlashingiz kerak</h1>
@@ -78,9 +264,11 @@
                 <div class="card text-center">
                     <h2>1. Sifatli ta’lim</h2>
                     <img class="img1" src="./images/1pexels-max-fischer-5212345.jpg" alt="Interaktiv dars">
-                    <p>Perfect Study o‘quv markazida darslar malakali ustozlar tomonidan olib boriladi.</p>
+                    <p>Perfect Study o‘quv markazida darslar malakali ustozlar tomonidan olib
+                        boriladi.</p>
                     <p>Darslar interaktiv va zamonaviy usullar bilan tashkil qilinadi.</p>
-                    <p>O‘quvchilar nazariy bilim bilan bir qatorda amaliy mashg‘ulotlar ham oladi.</p>
+                    <p>O‘quvchilar nazariy bilim bilan bir qatorda amaliy mashg‘ulotlar ham oladi.
+                    </p>
                     <p>Shu tarzda bilimlarni mustahkamlash va o‘rganish yanada samarali bo‘ladi.</p>
                 </div>
 
@@ -99,7 +287,8 @@
                     <p>Darslar real hayotdagi vaziyatlarga asoslanadi.</p>
                     <p>O‘quvchilar nazariy bilimni amalda qo‘llashni o‘rganadi.</p>
                     <p>Amaliy mashg‘ulotlar juda muhim hisoblanadi.</p>
-                    <p>Shu bilan bilimlar uzoq muddatli esda qoladi va o‘rganish samaradorligi oshadi.</p>
+                    <p>Shu bilan bilimlar uzoq muddatli esda qoladi va o‘rganish samaradorligi
+                        oshadi.</p>
                 </div>
 
                 <div class="card text-center">
@@ -116,7 +305,8 @@
                     <img class="img1" src="./images/5image.png" alt="Natijalarga erishish">
                     <p>O‘quvchilarimiz imtihonlarda yaxshi natijalar ko‘rsatadi.</p>
                     <p>Ustozlar har bir o‘quvchiga diqqat bilan yondashadi.</p>
-                    <p>Darslar va maslahatlar sizning bilimlarni samarali o‘zlashtirishga yordam beradi.</p>
+                    <p>Darslar va maslahatlar sizning bilimlarni samarali o‘zlashtirishga yordam
+                        beradi.</p>
                     <p>Shu yondashuv bilan o‘rganish jarayoni tezroq va osonroq bo‘ladi.</p>
                 </div>
 
@@ -124,6 +314,195 @@
         </div>
 
     </div>
+
+    <!-- FAQ -->
+    <section class="container py-5 faq-section">
+        <style>
+            .faq-section .accordion-item {
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                margin-bottom: 0.75rem;
+                overflow: hidden;
+            }
+
+            .faq-section .accordion-button {
+                font-weight: 500;
+            }
+
+            @media (max-width: 576px) {
+                .faq-section h2 {
+                    font-size: 1.5rem;
+                }
+
+                .faq-section .accordion-button {
+                    font-size: 0.95rem;
+                }
+            }
+        </style>
+
+        <h2 class="text-center mb-4">FAQ</h2>
+        <div class="row align-items-center">
+
+            <div class="col-lg-7">
+                <div class="accordion" id="faqAccordion">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Perfect Study nima?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">Perfect Study — bu bilim olish jarayonini samarali qilish
+                                uchun yaratilgan o‘quv platformasi.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Qanday foydalanish mumkin?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">Siz platformaga ro‘yxatdan o‘tib, kurslarni tanlab
+                                o‘rganishni boshlashingiz mumkin.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                O‘qish ?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">bo‘lishi mumkin.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Kurslar qaysi tillarda mavjud?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">Kurslar asosan o‘zbek, ingliz va rus tillarida mavjud.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Mobil ilova bormi?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">Ha, Perfect Study’ning Android va iOS uchun mobil ilovalari
+                                mavjud.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Sertifikat beriladimi?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">Ha, kurslarni tugatganingizdan so‘ng rasmiy sertifikat
+                                beriladi.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                To‘lov usullari qanday?
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">To‘lovlarni bank kartalari, elektron hamyonlar va mobil
+                                to‘lov tizimlari orqali amalga oshirishingiz mumkin.</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col-lg-5 text-center mt-4 mt-lg-0">
+                <img src="./images/photo_2025-09-20_17-47-40.jpg" alt="FAQ Image" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </section>
+
+    <!--Footer -->
+    <footer class="footer border shadow">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 mb-4 first-section">
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/perfect_logo.png" alt="">
+                        Perfect Study
+                    </a>
+                    <p class="pp">Ilm sari ishonchli qadam</p>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <h5>Resurslar</h5>
+                    <ul>
+                        <li><a href="#">Maslahatlar</a></li>
+                        <li><a href="#">Online darslar</a></li>
+                        <li><a href="#">Testlar</a></li>
+                        <li><a href="#">Videolar</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <h5>Foydali havolalar</h5>
+                    <ul>
+                        <li><a href="#">Bosh sahifa</a></li>
+                        <li><a href="#">Biz haqimizda</a></li>
+                        <li><a href="#">Aloqa</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-4 social-section">
+                    <h5>Biz bilan bog‘laning</h5>
+                    <div class="social-icons">
+
+                        <a href="https://t.me/perfectstudy_urgut" target="_blank"><i class="bi bi-telegram"></i></a>
+                        <a href="https://www.instagram.com/perfectstudy_urgut/" target="_blank"><i
+                                class="bi bi-instagram"></i></a>
+                    </div>
+                    <span class="phone">📞 +998 90 12345 67</span>
+                </div>
+
+            </div>
+
+            <hr class="footer-hr">
+            <p class="copyright">
+                &copy; 2025 Perfect Study sizning bilim hamrohingiz.
+            </p>
+        </div>
+    </footer>
 
 </body>
 
